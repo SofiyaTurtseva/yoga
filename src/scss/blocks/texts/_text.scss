@@ -1,0 +1,7 @@
+@use 'base/vars' as *;
+
+.text {
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  line-height: $text-line-height;
+  text-align: center;
+}

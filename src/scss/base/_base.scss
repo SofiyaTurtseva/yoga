@@ -1,0 +1,57 @@
+@use 'vars' as *;
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+}
+
+.page {
+	background-color: $page-bg;
+	color: $text-color;
+	font-family: $font-main;
+	font-weight: $font-weight-main;
+	text-wrap: balance;
+}
+
+.block {
+	height: auto;
+  padding: 40px 15px;
+}
+
+picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}

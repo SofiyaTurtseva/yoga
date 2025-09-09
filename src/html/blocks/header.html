@@ -1,0 +1,52 @@
+<header class="block header" id="main">
+  <div class="container">
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about">About Me</a></li>
+        <li class="nav__item"><a href="#faq">FAQ</a></li>
+        <li class="nav__item"><a href="#classes">Class Options</a></li>
+        <li class="nav__item"><a href="#feedback">Feedback</a></li>
+        <li class="nav__item"><a href="#contacts">Get in Touch</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__content">
+      <h1 class="header__title">Yoga with Mei</h1>
+      <p class="header__subtitle">Yoga for Self-Care</p>
+      <a href="#classes" class="button header__button">Reserve Your Spot</a>
+    </div>
+
+    <button
+      onclick="window['menu-dialog'].showModal()"
+      class="header__menu-button header__menu-button_cmd_open"
+    >
+      <span class="visually-hidden">Показать меню</span>
+    </button>
+
+    <dialog id="menu-dialog" class="header__menu" aria-label="Меню сайта">
+      <ul>
+        <li onclick="window['menu-dialog'].close()" class="nav__item">
+          <a href="#about">About Me</a>
+        </li>
+        <li onclick="window['menu-dialog'].close()" class="nav__item">
+          <a href="#faq">FAQ</a>
+        </li>
+        <li onclick="window['menu-dialog'].close()" class="nav__item">
+          <a href="#classes">Class Options</a>
+        </li>
+        <li onclick="window['menu-dialog'].close()" class="nav__item">
+          <a href="#feedback">Feedback</a>
+        </li>
+        <li onclick="window['menu-dialog'].close()" class="nav__item">
+          <a href="#contacts">Get in Touch</a>
+        </li>
+      </ul>
+      <button
+        onclick="window['menu-dialog'].close()"
+        class="header__menu-button header__menu-button_cmd_close"
+      >
+        <span class="visually-hidden">Скрыть меню</span>
+      </button>
+    </dialog>
+  </div>
+</header>

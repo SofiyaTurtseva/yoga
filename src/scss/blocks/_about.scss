@@ -1,0 +1,16 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.about {
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+
+  .about__image {
+    border-radius: 100px 0;
+  }
+
+  .about__text {
+    max-width: 500px;
+  }
+}

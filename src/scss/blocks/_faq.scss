@@ -1,0 +1,52 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.faq {
+  .faq__wrapper {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-block-start: 40px;
+
+    .faq__item {
+      border-bottom: 1px solid $accent-color;
+      padding: 20px 0;
+
+      .faq__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover, &:focus-visible {
+          opacity: 0.6;
+        }
+
+        .faq__icon {
+          flex-shrink: 0; 
+          transition: transform 0.7s ease;
+          inline-size: 20px;
+          block-size: 20px;
+        }
+      }
+
+      .faq__question::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq__answer {
+        padding-block-start: 10px;
+        font-weight: 300;
+        font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+        line-height: $text-line-height;
+      }
+    }
+  }
+}
+
+details[open] .faq__icon {
+  transform: rotate(180deg);
+}

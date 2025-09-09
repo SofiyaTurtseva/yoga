@@ -1,0 +1,22 @@
+[
+  {
+    "image": "hero01",
+    "alt": "Image of a client",
+    "name": "Ann, 36",
+    "feedback": "“With Mei, I finally felt that yoga is not about pressure, but about support.”"
+  },
+
+  {
+    "image": "hero02",
+    "alt": "Image of a client",
+    "name": "Karina, 25",
+    "feedback": "“With Mei, I achieved the flexibility I wanted and improved my posture.”"
+  },
+
+  {
+    "image": "hero03",
+    "alt": "Image of a client",
+    "name": "Kate, 32",
+    "feedback": "“She’s the only instructor I can truly relax with.”"
+  }
+]

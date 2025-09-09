@@ -1,0 +1,89 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.classes {
+  .cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-items: center;
+    gap: 60px;
+    margin-block-start: 60px;
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card__image {
+  border-radius: 15px;
+}
+
+.card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 65px 20px 130px;
+
+  opacity: 0;
+  color: $light-text-color;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+
+  @include tablet {
+    opacity: 1;
+  }
+}
+
+.card:hover .card__overlay {
+  opacity: 1;
+}
+
+.schedule {
+  font-size: clamp(0.9375rem, 0.8775rem + 0.3vw, 1.125rem);
+}
+
+.info {
+  font-size: clamp(0.9375rem, 0.9175rem + 0.1vw, 1rem);
+}
+
+.schedule,
+.info {
+  white-space: pre-line;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.card__button {
+  padding: 12px 30px;
+  color: $text-color;
+  background-color: $light-button-bg;
+}
+
+.card__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  border-radius: 0 0 15px 15px;
+  color: $light-text-color;
+  text-align: center;
+  background: $accent-color;
+
+  .card__title {
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: clamp(1rem, 0.92rem + 0.4vw, 1.25rem);
+  }
+}

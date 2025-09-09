@@ -1,0 +1,44 @@
+@use 'base/mixins' as *;
+@use 'base/vars' as *;
+
+.footer {
+  display: grid;
+  justify-items: center;
+  gap: 44px;
+
+  .footer__title {
+    text-transform: none;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .social__link {
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover, &:focus-visible {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .footer__copyright {
+    display: grid;
+    gap: 10px;
+    color: $accent-text-color;
+    font-size: clamp(0.875rem, 0.835rem + 0.2vw, 1rem);
+    text-align: center;
+
+    a {
+      outline: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover, &:focus-visible {
+        filter: contrast(5);
+      }
+    }
+  }
+}

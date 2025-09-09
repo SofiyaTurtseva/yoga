@@ -1,0 +1,25 @@
+[
+  {
+    "schedule": "<span class='highlight'>Schedule:</span>\nMon / Wed / Fri at 7:00 PM\nSat at 10:00 AM",
+    "info": "<span class='highlight'>Level:</span>\nBeginners & Intermediate",
+    "image": "01",
+    "alt": "Group Yoga Classes",
+    "classes": "Group Classes"
+  },
+
+  {
+    "schedule": "<span class='highlight'>Time:</span>\nBy appointment",
+    "info": "<span class='highlight'>Best for:</span>\nAnyone seeking a personalized approach, recovery after injuries, or a gentle introduction to yoga practice",
+    "image": "02",
+    "alt": "Personal Yoga Classes",
+    "classes": "Private Sessions"
+  },
+
+  {
+    "schedule": "<span class='highlight'>Schedule:</span>\nTue / Thu at 8:00 PM (group sessions)\nPrivate sessions — by appointment",
+    "info": "<span class='highlight'>Includes:</span>\nClass recordings + support chat",
+    "image": "03",
+    "alt": "Online Yoga Classes",
+    "classes": "Online Classes"
+  }
+]
