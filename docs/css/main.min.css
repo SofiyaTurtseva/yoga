@@ -280,6 +280,7 @@ pre.code {
   .header .header__menu-button {
     position: absolute;
     top: 80px;
+    left: 47%;
     display: block;
     border: none;
     background-color: transparent;
